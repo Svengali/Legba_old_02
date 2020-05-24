@@ -29,8 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "geometry3Sharp_netstandard"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSharp", "libs\MathSharp\sources\MathSharp\MathSharp.csproj", "{2A376DFE-E83B-4F92-B247-2172AFA8FFF9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{C9DEAABE-82CD-4CF1-87A6-26313F907501}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Distributed", "Distributed", "{460349BA-279A-49D9-83C9-82065A7FBCC4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{BACDF9DD-64F1-4F5A-8A3B-6DCE51475E06}"
@@ -44,6 +42,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenNet", "libs\GenNet\GenNet.csproj", "{961505BB-956F-4C2B-A831-198566C0D82C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenCore", "libs\GenCore\GenCore.csproj", "{8A5BC28F-8D43-4AE6-B586-E2E915ED6E53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{2697BB2B-D343-4849-9A51-30E78859BC20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
