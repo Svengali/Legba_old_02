@@ -29,8 +29,7 @@ namespace sv
 		static void Main( string[] args )
 		{
 			//RWTest();
-
-			ActTest();
+			//ActTest();
 
 
 			sv.Main server = new sv.Main( args[0] );
@@ -49,6 +48,7 @@ namespace sv
 
 		}
 
+		#region Test
 
 		static void RWTest()
 		{
@@ -195,6 +195,7 @@ namespace sv
 			lib.Log.info( $"LambdaToCall_1 {a}" );
 		}
 
+		#endregion //Test
 
 	}
 }
