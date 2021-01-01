@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>cl</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libs\CodeGeneration.Roslyn\src\CodeGeneration.Roslyn.Attributes\CodeGeneration.Roslyn.Attributes.csproj" />
+    <ProjectReference Include="..\..\..\libs\CodeGeneration.Roslyn\src\CodeGeneration.Roslyn.Engine\CodeGeneration.Roslyn.Engine.csproj" />
+    <ProjectReference Include="..\..\..\libs\CodeGeneration.Roslyn\src\CodeGeneration.Roslyn.Tasks\CodeGeneration.Roslyn.Tasks.csproj" />
+    <ProjectReference Include="..\..\..\libs\CodeGeneration.Roslyn\src\CodeGeneration.Roslyn.Tool\CodeGeneration.Roslyn.Tool.csproj" />
+    <ProjectReference Include="..\..\..\libs\CodeGeneration.Roslyn\src\CodeGeneration.Roslyn\CodeGeneration.Roslyn.csproj" />
+    <ProjectReference Include="..\..\..\libs\Dist\Dist.csproj" />
+    <ProjectReference Include="..\..\..\libs\GenCore\GenCore.csproj" />
+    <ProjectReference Include="..\..\..\libs\GenNet\GenNet.csproj" />
+    <ProjectReference Include="..\..\..\libs\MathSharp\sources\MathSharp\MathSharp.csproj" />
+    <ProjectReference Include="..\..\..\libs\NetCore\NetCore.csproj" />
+    <ProjectReference Include="..\..\..\libs\SFML.Net\src\SFML.Audio\SFML.Audio.csproj" />
+    <ProjectReference Include="..\..\..\libs\SFML.Net\src\SFML.Graphics\SFML.Graphics.csproj" />
+    <ProjectReference Include="..\..\..\libs\SFML.Net\src\SFML.System\SFML.System.csproj" />
+    <ProjectReference Include="..\..\..\libs\SFML.Net\src\SFML.Window\SFML.Window.csproj" />
+    <ProjectReference Include="..\..\..\libs\SharpLib\SharpLib.csproj" />
+  </ItemGroup>
+
+</Project>
