@@ -142,8 +142,8 @@ namespace sv
 			
 			int valInt = 10;
 			float valFloat = 10.0f;
-			string valString0 = "Hello 0";
-			string valString1 = "Hello 1";
+			//string valString0 = "Hello 0";
+			//string valString1 = "Hello 1";
 
 
 			//var act2 = db.Act.create( LambdaToCall_0 );
@@ -153,11 +153,11 @@ namespace sv
 			var act4 = db.Act.create( LambdaToCall_2, "Howdy" );
 
 
-			var act0 = new db.Act( () => {
+			var act0 = db.Act.create( () => {
 				lib.Log.info( $"The int is {valInt}" );
 			} );
 
-			var act1 = new db.Act( () => {
+			var act1 = db.Act.create( () => {
 				lib.Log.info( $"The float is {valFloat}" );
 
 			} );
@@ -171,11 +171,11 @@ namespace sv
 			string valString0 = "Hello 0";
 			string valString1 = "Hello 1";
 
-			var act2 = new db.Act( () => {
+			var act2 = db.Act.create( () => {
 				lib.Log.info( $"The string is {valString0}" );
 			} );
 
-			var act3 = new db.Act( () => {
+			var act3 = db.Act.create( () => {
 				lib.Log.info( $"The string is {valString1}" );
 			} );
 		}
