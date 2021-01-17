@@ -57,13 +57,15 @@ namespace sv
 			{
 				var comHealth = ent.ComHealth.create(m_healthOpt: 100.0f.Some());
 
-				var m_coms = ImmutableArray<ent.ComList>.Empty;
+				//var m_coms = ImmutableArray<ent.ComList>.Empty;
 
-				m_coms = m_coms.Add( new ent.ComList( comHealth ) );
+				//m_coms = m_coms.Add( new ent.ComList( comHealth ) );
 
-				var nz = new net.NearZero( 0.25f );
+				//var nz = new net.NearZero( 0.25f );
 
-				var ent1 = ent.Entity.create( m_comsOpt: m_coms.Some(), m_nzOpt: nz.Some() );
+				var nComs = ImmutableDictionary<Type, ent.Component>.Empty.Add( comHealth.GetType(), comHealth );
+
+				var ent1 = ent.Entity.create( m_comsOpt: nComs.Some() ); //, m_nzOpt: nz.Some() );
 
 				newId = ent1.id;
 
@@ -91,20 +93,25 @@ namespace sv
 			ent.EntityId newId;
 
 			{
+				//*
 				var comHealth = ent.ComHealth.create(m_healthOpt: 100.0f.Some());
 
-				var m_coms = ImmutableArray<ent.ComList>.Empty;
+				//var m_coms = ImmutableArray<ent.ComList>.Empty;
 
-				m_coms = m_coms.Add( new ent.ComList( comHealth ) );
+				//m_coms = m_coms.Add( new ent.ComList( comHealth ) );
 
-				var ent1 = ent.Entity.create( m_comsOpt: m_coms.Some() );
+				//var nz = new net.NearZero( 0.25f );
+
+				var nComs = ImmutableDictionary<Type, ent.Component>.Empty.Add( comHealth.GetType(), comHealth );
+
+				var ent1 = ent.Entity.create( m_comsOpt: nComs.Some() ); //, m_nzOpt: nz.Some() );
 
 				newId = ent1.id;
 
 				using var tx = db.checkout();
 
 				tx.add( ent1 );
-
+				//*/
 			}
 
 			{
@@ -150,7 +157,7 @@ namespace sv
 
 			var act3 = db.Act.create( LambdaToCall_1, 10 );
 
-			var act4 = db.Act.create( LambdaToCall_2, "Howdy" );
+			var act4 = db.Act.create( LambdaToCall_2, "Test" );
 
 
 			var act0 = db.Act.create( () => {
