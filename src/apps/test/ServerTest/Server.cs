@@ -161,11 +161,11 @@ namespace sv
 
 
 			var act0 = db.Act.create( () => {
-				lib.Log.info( $"The int is {valInt}" );
+				log.info( $"The int is {valInt}" );
 			} );
 
 			var act1 = db.Act.create( () => {
-				lib.Log.info( $"The float is {valFloat}" );
+				log.info( $"The float is {valFloat}" );
 
 			} );
 
@@ -179,27 +179,27 @@ namespace sv
 			string valString1 = "Hello 1";
 
 			var act2 = db.Act.create( () => {
-				lib.Log.info( $"The string is {valString0}" );
+				log.info( $"The string is {valString0}" );
 			} );
 
 			var act3 = db.Act.create( () => {
-				lib.Log.info( $"The string is {valString1}" );
+				log.info( $"The string is {valString1}" );
 			} );
 		}
 
 		static void LambdaToCall_0()
 		{
-			lib.Log.info( $"LambdaToCall_0" );
+			log.info( $"LambdaToCall_0" );
 		}
 
 		static void LambdaToCall_1( int a )
 		{
-			lib.Log.info( $"LambdaToCall_1 {a}" );
+			log.info( $"LambdaToCall_1 {a}" );
 		}
 
 		static void LambdaToCall_2( string a )
 		{
-			lib.Log.info( $"LambdaToCall_1 {a}" );
+			log.info( $"LambdaToCall_1 {a}" );
 		}
 
 		#endregion //Test
